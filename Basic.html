@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ways of Styling</title>
+</head>
+<body>
+    <h1>Inline Styling:</h1>
+
+    style="propertyName:respectiveValue";
+    <br>
+   <p style="color:magenta">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam beatae exercitationem adipisci placeat quasi nam sit impedit velit suscipit consequatur reprehenderit quis, doloribus debitis fugit molestiae odit ullam iusto!</p> 
+   <p style="color:magenta; font-size:40px">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa magnam beatae exercitationem adipisci placeat quasi nam sit impedit velit suscipit consequatur reprehenderit quis, doloribus debitis fugit molestiae odit ullam iusto!</p>
+   <!--But this way of styling is not recommended bcz each line we have to wright this-->
+   <h2>2)Internal Styling:</h2>
+   <!--At the end of head we can write this after meta tag alws write-->
+   <style>
+    h1{
+        color:brown;
+    }
+   </style>
+    <!-- but for reusablity purpose this is also  not recommended same styling use for multiple pages in our website thenwe write multiple page same code multiple time so better way of styling is Externaml styliing -->
+    <h2>3.External Styling</h2>
+    <p>Create a style.css file and add this file in .html file<br><br>
+        at the end of head tag : <link rel="stylesheet" href="css/style.css">
+    /head
+    </p>
+</body>
+</html>
