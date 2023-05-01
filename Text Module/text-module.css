@@ -1,0 +1,70 @@
+h1{
+    text-align: center;
+}
+h2{
+    text-decoration-line: underline;
+    text-decoration-color: purple;
+    /* text-decoration-skip-ink: none; */
+    text-underline-position: under;
+}
+
+p{
+    /* text-decoration-line: underline; */
+    text-decoration-line: overline;
+    /* text-decoration-line: line-through; */
+    /* text-decoration-line: underline overline line-through; */ 
+    /* none it not  use there with these 3 values */
+
+    /* ****    */
+    text-decoration-color: brown;
+    text-decoration-thickness: 5px;
+    /* text-decoration-style: dashed; */
+    /* text-decoration-style: dotted; */
+    /* text-decoration-style: double; */
+    /* text-decoration-style: solid; */
+    text-decoration-style: wavy;
+} 
+h3{
+    /* text-shadow: x-offset y-offset blurredius color; */
+    /* text-shadow: 10px 20px 5px red; */
+    text-shadow: 60px 20px 5px red,
+                 10px 20px 5px green;
+}
+h4{
+    /* text-emphasis-style: open; */
+    /* text-emphasis-style: filled; */
+    /* text-emphasis-style: circle; */
+    /* text-emphasis-style:triangle; */
+    /* text-emphasis-style: sesame; */
+    /* text-emphasis-style: double-circle; */
+    /* text-emphasis-style: "M"; */
+    /* text-emphasis-style: "😍"; */
+    /* text-emphasis-style: open circle; */
+    text-emphasis-color: red;
+    text-emphasis-position: under;
+    /* text-transform: lowercase; */
+    /* text-transform: uppercase; */
+    text-transform: capitalize;
+}
+span{
+    text-emphasis-style: triangle;
+}
+h5{
+    /* white-space: none; */
+     /* White spaces in text */
+    /* white-space: pre; */
+    /* White      spaces in text */
+    /* white-space: nowrap; */
+    /* White spaces in text */
+    /* white-space: pre-wrap; */
+    /* White      spaces in text */
+    /* white-space:pre-line; */
+    /* White spaces in text */
+
+
+}
+h6{
+    /* word-spacing: 10px; */
+    /* letter-spacing: 2px; */
+    text-indent: 40px;
+}

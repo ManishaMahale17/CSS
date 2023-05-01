@@ -1,0 +1,36 @@
+/* /* * {
+  margin: 0;
+} */
+/* body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+} */
+/* div {
+  background-color:grey;
+  width: 60px;
+  height: 60px; */
+  /* box-shadow: x-offset y-offset blur-radius spread color; */
+  /* box-shadow: 200px 200px 10px 0 red, -200px 200px 10px 0 yellow,
+    200px -200px 10px 0 green, -200px -200px 10px 0 pink; */
+    /* box-shadow: 60px 60px 10px 0 grey, -60px 60px 10px 0 black, 60px -60px 10px 0 black,-60px -60px 10px 0 black;} */
+
+ .chessboard {
+    width: 640px;
+    height: 640px;
+    margin: 20px;
+    border: 10px solid black;
+}
+.black {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color: grey;
+}
+.white {
+    float: left;
+    width: 80px;
+    height: 80px;
+    background-color:white;
+}

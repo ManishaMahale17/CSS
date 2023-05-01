@@ -1,0 +1,96 @@
+.container {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    margin: 200px auto;
+    border: 1px solid black;
+  }
+  
+  .box {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+  }
+  
+  .box1 {
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: red;
+    animation: up 3s infinite alternate;
+  }
+  
+  .box2 {
+    top: 100%;
+    left: 50%;
+    background-color: skyblue;
+    transform: translateX(-50%) translateY(-50%);
+    animation: down 3s infinite alternate;
+  }
+  
+  .box3 {
+    top: 50%;
+    left: 0%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: blue;
+    animation: left 3s infinite alternate;
+  }
+  
+  .box4 {
+    top: 50%;
+    left: 100%;
+    transform: translateX(-50%) translateY(-50%);
+    background-color: yellow;
+    animation: right 3s infinite alternate;
+  }
+  @keyframes up {
+    0% {
+      top: 0%;
+    }
+    50% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+    100% {
+      top: 50%;
+      background-color: black;
+    }
+  }
+  
+  @keyframes down {
+    0% {
+      top: 100%;
+    }
+    50% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+    100% {
+      top: 50%;
+      background-color: black;
+    }
+  }
+  
+  @keyframes right {
+    0% {
+      left: 100%;
+    }
+    50% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+    100% {
+      left: 50%;
+      background-color: black;
+    }
+  }
+  
+  @keyframes left {
+    0% {
+      left: 0%;
+    }
+    50% {
+      transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+    100% {
+      left: 50%;
+      background-color: black;
+    }
+  }

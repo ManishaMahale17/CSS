@@ -1,0 +1,33 @@
+/* p{
+    color:red;
+}
+h1{
+    color:palevioletred;
+}
+.headings{
+    color:blue;
+    font-style: italic;
+} */
+/* %%%%%%% 1.Descendant Combinator %%%%%%% */
+/* div p{
+    color:red;
+} */
+/* Descendant Combinator:use to target child/grandchild of an element using one space between parent and child here div is parent and p is child */
+
+/* %%%%%%% 2.Immidiate child Combinator %%%%%%% using(>) sign*/
+
+/* div > h3{
+    color:red;
+} */
+
+/* %%%%%%% 3.Adjustent/next sibling Combinator:using + sign %%%%%%% */
+/* 
+h2+h3{
+    color: red;
+} */
+/* %%%%%%% 5.General subsequenyt sibling Combinator:using ~ sign %%%%%%% */
+h3 ~p{
+   color:red;
+} 
+
+
