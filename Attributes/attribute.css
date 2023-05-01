@@ -1,0 +1,75 @@
+/* p{
+    color: red;
+} */
+/*********______ 1)Target those element who want to style using [] ____ ************************/
+/* p[title] {
+          color:red;
+          font-size: 20px;
+          font-family: Verdana, Geneva, Tahoma, sans-serif;
+          font-weight: bold;
+          font-style: italic;
+          font-variant: small-caps;
+          border:1px solid red;
+} */
+/* a[href]{
+    color:red;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-variant: small-caps;
+    border:1px solid red;
+} */
+
+/* p[title], a[href] {
+    color:red;
+} */
+
+/*********______ 2)Attribute Pattern Matching ____ ************************/
+
+
+/****1.Exact match**********/
+/* [title="para-4"]{
+    color:red;
+}
+[class="para1"]{
+    color:green;
+} */
+
+/****2.followed by dashed match**********/
+/* [title="para-4"],[title="para-3"]{
+    color:violet;
+} */
+/* ****title two times we have to write insted we write onces using pipe | operator **** */
+/* [title |="para"]{
+    color:red;
+} */
+
+/****3.Seacrch exact word anywhere in the value using tilde(~) opeartor**********/
+/* [title ~="Link"]{
+    color:red;
+} */
+/* [class ~="para2"]{
+    color:green;
+} */
+
+/****4.Starting with given character or word using(^)Opeartor **********/
+/* [title ^="p"]{
+    color:red;
+}
+[href ^="res"]{
+    color:green;
+} */
+
+/****5.Endingwith given character or word using($)Opeartor **********/
+/* [title $="k"]{
+    color:red;
+}
+[href $=".doc"]{
+    color:gold;
+} */
+
+/****6.Search with given char or word whenever it is using *(star)operator **********/
+[title *="nk"]{
+    color:brown;
+}
