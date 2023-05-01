@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Border property</title>
+    <style>
+      p {
+        height: 100px;
+        width: 100px;
+        text-align: justify;
+        /* text-align: justify; equal widhth like newspaper */
+        /* text-align: center;*/
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      /* p{
+            border-width border-style (required) border-color;
+            1px solid red;
+            } */
+      p.double {
+        border-style: double;
+        border-color: blue;
+        border-width: 10px;
+        /* padding: 5px; */
+        margin: 20px;
+        /* %%%%%%%%%%%>>>>Margin>>>>>>%%%%%%%%%%%% */
+        /* margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 150px;
+  margin-left: 80px; */
+        /* margin: 100px 150px 100px 80px */
+        /* padding:(inner space) margin:outside of any defined borders.*/
+         /* If the margin property has three values:
+         margin: 25px 50px 75px;
+top margin is 25px
+right and left margins are 50px
+bottom margin is 75px */
+        /* margin: 25px 50px;
+top and bottom margins are 25px
+right and left margins are 50px */
+/* %%%%%%%%%%%>>>>Padding>>>>>>%%%%%%%%%%%% */
+/* padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px; */
+  padding:50px 30px 50px 80px;
+  outline: #4CAF50 solid 10px;
+  /* padding: 5px; */
+  /* If the padding property has three values:
+
+padding: 25px 50px 75px;
+top padding is 25px
+right and left paddings are 50px
+bottom padding is 75px */
+      }
+      p.dotted {
+        border-style: dotted;
+        outline-style: groove;
+        outline-color: #4CAF50;
+        outline: 10px solid #4CAF50  ;
+        /* border-width: medium; */
+        /* border-width:5px 10px; */
+      }
+      p.dashed {
+        
+        margin: 30px;
+  background:yellow;
+  border: 1px dashed black;
+  outline: 1px dashed red;
+  outline-offset: 20px;
+      }
+      p.solid {
+        border-style: solid;
+        border-width: 5px 10px; /* 5px top and bottom, 10px on the sides */
+        /* border-width: 25px 10px 4px 35px; (25px top, 10px right, 4px bottom and 35px left) */
+        /* border-color: red; */
+        border-color: red green blue violet;
+      }
+
+      p.groove {
+        border-style: groove;
+        border-right-color: #ff0000;
+      }
+      p.ridge {
+        border-style: ridge;
+      }
+      p.inset {
+        border-style: inset;
+      }
+      p.outset {
+        border-style: outset;
+      }
+      p.none {
+        border-style: none;
+      }
+      p.hidden {
+        border-style: hidden;
+      }
+      p.mix {
+        border-style: dotted dashed solid double;
+        /* padding:10px; */
+        /* top right bottom left */
+        /* border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid; */
+      }
+      p.normal {
+        border: 1px solid red;
+        padding: 5px;
+      }
+      p.round1 {
+        border: 1px solid red;
+        padding: 5px;
+        border-radius: 10px;
+      }
+      p.round2 {
+        border: 1px solid red;
+        padding: 5px;
+        border-radius: 12px;
+      }
+      p.round3 {
+        border: 1px solid red;
+        padding: 20px;
+        border-radius: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Border Property</h1>
+    <p class="double">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <p class="dotted">A dotted border.</p>
+    <p class="dashed">A dashed border.</p>
+    <p class="solid">A solid border.</p>
+    <p class="double">A double border.</p>
+    <p class="groove">A groove border.</p>
+    <p class="ridge">A ridge border.</p>
+    <p class="inset">An inset border.</p>
+    <p class="outset">An outset border.</p>
+    <p class="none">No border.</p>
+    <p class="hidden">A hidden border.</p>
+    <p class="mix">A mixed border.</p>
+
+    <h2>Rounded Borders</h2>
+    <p class="normal">Normal border</p>
+    <p class="round1">Round border</p>
+    <p class="round2">Rounder border</p>
+    <p class="round3">Roundest border</p>
+  </body>
+</html>

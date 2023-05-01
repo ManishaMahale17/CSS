@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        .div1{
+        border:1px solid black;
+        margin:0px;
+        padding:5px;
+        width:350px;
+        text-align: center;
+        
+     }
+     .div2{
+        border:10px solid green;
+        margin:10px;
+        padding:10px;
+        width:300px;
+        background-color: aquamarine;
+     }
+     .div3{
+        border:1px solid black;
+        /* outline:10px solid red; */
+        outline-color: red;
+        outline-width: 10px;
+        outline-style: double;
+        height: 200px;
+        width:200px;
+        padding:20px;
+        background-color: bisque;
+     }
+    </style>
+</head>
+<body>
+    <!--Box model allows us to add boreder around element and to define space between element.
+         The CSS box model is essentially a box that wraps around every HTML element. It consists of: margins, borders, padding, and the actual content
+    1.Content:text/images apperes in this box
+2.Padding:clears area around content
+3.Border: goes around padding and content
+4.margin: clears area outside the border.  -->
+<h1>Box Model</h1>
+<div class="div1">
+<img src="/Images/Donut.jpg" width="350px" height="200px" alt="donut">
+<p> Donut Image</p>
+</div>
+<div class="div2">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi est quo dicta porro molestiae non optio, unde eaque, nisi fugiat expedita sit amet magni quas sed repellat perferendis tenetur alias!
+</div>
+<h2>Outline</h2>
+<div class="div3">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, hic facilis voluptatum sequi distinctio nostrum perferendis a officiis voluptatibus vero magni, corporis nemo necessitatibus quisquam. Ducimus totam maxime ad optio!</p>
+</div>
+</body>
+</html>

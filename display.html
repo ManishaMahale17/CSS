@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display property</title>
+    <style>
+     li{
+        display: inline;
+     }
+     /*default display value for most elements is block or inline.
+     1)Black Element:
+     black level element alws start new line and it takes full width available eg:div,header,footer,h1-h6,form,p.
+     2)Inline Element:
+     Inline element cant start with new line and takes up much width it is necessary.eg.span,<a>,<img>
+     Display a list of links as a horizontal menu */
+     /* li{
+        display: block;
+     } */
+     /* h2{
+        display: none;
+        /* display: none; hidden heading looks element is not there
+     } */
+     
+     h2{
+        visibility:hidden;
+        /* display: none; hidden heading looks element is  there it remains space   */
+     }
+    </style>
+</head>
+<body>
+    
+    <ul>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3schools</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3C</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3CSc</a></li>
+    </ul>
+    <h2>This is hidden heading</h2>
+    
+    
+   
+</body>
+</html>
